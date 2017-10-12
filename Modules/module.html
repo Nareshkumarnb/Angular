@@ -10,12 +10,24 @@
             var deposit = function(money) {
                 balance += money;
                 console.log("Balance after deposit: ", balance);
+                sendMsg();
             }
             var withdraw = function(money) {
                 balance -= money;
                 console.log("Balance after withdraw: ", balance);
+                sendMsg();
+            }
+            var sendMsg = function() {
+                console.log("Sending Message!!");
+            }
+            return {
+                deposit: deposit,
+                withdraw: withdraw
             }
         }
+        var naresh = account();
+        naresh.deposit(1000);
+        naresh.withdraw(650);
     </script>
 </head>
 
