@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Module</title>
+    <script>
+        var account = function() {
+            var balance = 0;
+            var deposit = function(money) {
+                balance += money;
+                console.log("Balance after deposit: ", balance);
+            }
+            var withdraw = function(money) {
+                balance -= money;
+                console.log("Balance after withdraw: ", balance);
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
